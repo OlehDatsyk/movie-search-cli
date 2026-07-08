@@ -1,0 +1,35 @@
+# Environment variables (contains secrets - never commit this)
+.env
+
+# Python virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache/compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# VS Code settings (optional - remove if you want to share workspace settings)
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
