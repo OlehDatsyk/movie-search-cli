@@ -1,8 +1,8 @@
 # 🎬 Movie Search CLI
 
 A professional, production-ready command-line application for searching movies
-and viewing detailed information — release year, runtime, genres, director,
-actors, IMDb rating, plot, poster URL, country, language, and awards — powered
+and viewing detailed information - release year, runtime, genres, director,
+actors, IMDb rating, plot, poster URL, country, language, and awards - powered
 by the [OMDb API](https://www.omdbapi.com/) and beautifully rendered in your
 terminal using [Rich](https://github.com/Textualize/rich).
 
@@ -51,17 +51,17 @@ computer first.
 
 1. Go to the official Python website: **https://www.python.org/downloads/**
 2. Click the yellow **"Download Python 3.x.x"** button (any version 3.9 or
-   newer works fine — 3.11 or 3.12 is recommended).
+   newer works fine - 3.11 or 3.12 is recommended).
 3. Run the installer you downloaded.
    - **Windows users:** On the very first installer screen, make sure you
      check the box that says **"Add python.exe to PATH"** at the bottom
-     before clicking "Install Now". This step is critical — if you skip it,
+     before clicking "Install Now". This step is critical - if you skip it,
      Python commands will not work in the terminal.
    - **macOS users:** Run the downloaded `.pkg` file and follow the
-     installation wizard (Continue → Continue → Install).
+     installation wizard (Continue -> Continue -> Install).
 4. After installation finishes, verify it worked:
    - Open VS Code.
-   - Open the built-in terminal: click **Terminal → New Terminal** in the
+   - Open the built-in terminal: click **Terminal -> New Terminal** in the
      top menu (or press `` Ctrl+` `` on Windows/Linux, `` Cmd+` `` on macOS).
    - Type the following command and press Enter:
 
@@ -102,7 +102,7 @@ or a local folder, you can **skip this step** and go straight to
 
 1. Go to **https://git-scm.com/downloads**
 2. Download and run the installer for your operating system.
-3. Keep clicking "Next" using all default options — the defaults are fine
+3. Keep clicking "Next" using all default options - the defaults are fine
    for beginners.
 4. Verify installation by opening a VS Code terminal and typing:
 
@@ -122,7 +122,7 @@ or a local folder, you can **skip this step** and go straight to
 
 You have two options:
 
-### Option A — You already have the project folder (e.g. downloaded as ZIP)
+### Option A - You already have the project folder (e.g. downloaded as ZIP)
 
 1. If the project is a `.zip` file, right-click it and choose
    **"Extract All..."** (Windows) or double-click it (macOS) to unzip it.
@@ -131,7 +131,7 @@ You have two options:
 3. Move this folder somewhere easy to find, such as your Desktop or
    Documents folder.
 
-### Option B — Cloning from a Git repository
+### Option B - Cloning from a Git repository
 
 If this project lives in a Git repository, open a terminal (outside VS Code,
 or use VS Code's terminal from any starting folder) and run:
@@ -148,7 +148,7 @@ Replace `<repository-url>` with the actual repository URL.
 ## Step 4: Open the Project in VS Code
 
 1. Open Visual Studio Code.
-2. Click **File → Open Folder...** (macOS: **File → Open...**).
+2. Click **File -> Open Folder...** (macOS: **File -> Open...**).
 3. Navigate to and select the `movie-search-cli` folder.
 4. Click **Select Folder** (or **Open** on macOS).
 5. You should now see the project files listed in the **Explorer** panel on
@@ -167,7 +167,7 @@ Replace `<repository-url>` with the actual repository URL.
    ```
 
 6. Open a terminal **inside this project folder**: go to
-   **Terminal → New Terminal** in the top menu. The terminal prompt should
+   **Terminal -> New Terminal** in the top menu. The terminal prompt should
    show you are inside the `movie-search-cli` directory.
 
 ---
@@ -175,7 +175,7 @@ Replace `<repository-url>` with the actual repository URL.
 ## Step 5: Create a Virtual Environment
 
 A virtual environment is an isolated, self-contained space where this
-project's Python packages are installed — separate from other projects on
+project's Python packages are installed - separate from other projects on
 your computer. This avoids version conflicts and keeps your system clean.
 
 In the VS Code terminal (make sure you are inside the `movie-search-cli`
@@ -188,7 +188,7 @@ python -m venv venv
 (If `python` doesn't work, try `python3 -m venv venv` instead.)
 
 This creates a new folder named `venv` inside your project. Nothing will
-print on success — that's normal. You should now see a `venv/` folder appear
+print on success - that's normal. You should now see a `venv/` folder appear
 in the VS Code Explorer panel on the left.
 
 ---
@@ -202,14 +202,14 @@ Python.
 
 Choose the command that matches your operating system and terminal type:
 
-### Windows (PowerShell — this is the VS Code default terminal)
+### Windows (PowerShell - this is the VS Code default terminal)
 
 ```powershell
 .\venv\Scripts\Activate.ps1
 ```
 
 > **If you get a "running scripts is disabled" error**, see the
-> [Common Errors](#-common-errors-and-solutions) section below — it's a
+> [Common Errors](#-common-errors-and-solutions) section below - it's a
 > one-time fix.
 
 ### Windows (Command Prompt / cmd.exe)
@@ -243,7 +243,7 @@ If you see `(venv)`, the virtual environment is active. ✅ Keep it active for
 every step below.
 
 > 💡 **Tip:** VS Code often detects the `venv` folder automatically and asks
-> "Select this environment as your workspace interpreter?" — click **Yes**.
+> "Select this environment as your workspace interpreter?" - click **Yes**.
 > You can also select it manually: press `Ctrl+Shift+P` (or `Cmd+Shift+P` on
 > macOS), type **"Python: Select Interpreter"**, and choose the one that
 > mentions `./venv`.
@@ -286,11 +286,11 @@ personal API key.
 2. Select the **FREE (1,000 daily limit)** option.
 3. Fill in your email address and accept the terms.
 4. Click **Submit**.
-5. Check your email inbox — OMDb will send you an activation link.
+5. Check your email inbox - OMDb will send you an activation link.
 6. Click the activation link in the email. Your API key will be shown on the
    confirmation page and also included in the email (it looks like a short
    string of letters/numbers, e.g. `a1b2c3d4`).
-7. Copy this API key — you'll need it in the next step.
+7. Copy this API key - you'll need it in the next step.
 
 > ⚠️ Keep your API key private. Don't share it publicly or commit it to
 > GitHub. This project's `.gitignore` already prevents your `.env` file
@@ -307,7 +307,7 @@ The application reads your API key from a file named `.env` (not
 2. Click **Copy**, then right-click the `movie-search-cli` folder and click
    **Paste**. This creates a copy named `.env.example copy` or similar.
 3. Rename the copied file to exactly: `.env`
-   (Right-click the file → **Rename**, then type `.env` and press Enter.)
+   (Right-click the file -> **Rename**, then type `.env` and press Enter.)
 
    Alternatively, do it entirely from the terminal:
 
@@ -328,9 +328,9 @@ The application reads your API key from a file named `.env` (not
    OMDB_API_KEY=a1b2c3d4
    ```
 
-   (Use your actual key — the example above is just a placeholder.)
+   (Use your actual key - the example above is just a placeholder.)
 
-6. Save the file: **File → Save** or `Ctrl+S` (`Cmd+S` on macOS).
+6. Save the file: **File -> Save** or `Ctrl+S` (`Cmd+S` on macOS).
 
 Your `.env` file should now look like this (with your real key):
 
@@ -385,7 +385,7 @@ python main.py "Batman" --search
 
 ## 💻 Usage Examples
 
-### Example 1 — Interactive mode
+### Example 1 - Interactive mode
 
 **Command:**
 ```bash
@@ -423,7 +423,7 @@ Release year (optional, press Enter to skip):
 ╰──────────────────────────────────────────────────────────────────╯
 ```
 
-### Example 2 — Direct search with a year
+### Example 2 - Direct search with a year
 
 **Command:**
 ```bash
@@ -433,7 +433,7 @@ python main.py "The Lion King" --year 2019
 **Expected output:** a formatted panel with details for the 2019 remake
 instead of the 1994 original.
 
-### Example 3 — Listing multiple results
+### Example 3 - Listing multiple results
 
 **Command:**
 ```bash
@@ -453,7 +453,7 @@ python main.py "Batman" --search
 └───┴─────────────────────────┴──────┴───────────┘
 ```
 
-### Example 4 — Movie not found
+### Example 4 - Movie not found
 
 **Command:**
 ```bash
@@ -490,7 +490,7 @@ movie-search-cli/
 ├── .env.example           # Template showing which environment variables
 │                         # are required (safe to commit to Git)
 ├── .env                   # Your real API key (created by you in Step 9,
-│                         # NEVER committed to Git — see .gitignore)
+│                         # NEVER committed to Git - see .gitignore)
 ├── .gitignore             # Tells Git which files/folders to ignore
 │                         # (venv/, .env, __pycache__/, etc.)
 └── README.md               # This file
@@ -593,10 +593,10 @@ OMDb's servers are temporarily down.
 ### ❌ VS Code terminal still shows the system Python, not the venv one
 
 **Solution:**
-- Press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) → type **"Python: Select
-  Interpreter"** → choose the interpreter path that includes `venv`
+- Press `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) -> type **"Python: Select
+  Interpreter"** -> choose the interpreter path that includes `venv`
   (e.g. `./venv/bin/python` or `.\venv\Scripts\python.exe`).
-- Close the terminal panel and open a new one (**Terminal → New Terminal**)
+- Close the terminal panel and open a new one (**Terminal -> New Terminal**)
   so it picks up the newly selected interpreter.
 
 ---
@@ -606,7 +606,7 @@ OMDb's servers are temporarily down.
 **Cause:** Usually means the terminal is waiting for input in interactive
 mode.
 
-**Solution:** Just type a movie title and press Enter — the prompt
+**Solution:** Just type a movie title and press Enter - the prompt
 `Enter a movie title:` should be visible just above your cursor.
 
 ---
@@ -664,5 +664,5 @@ terminal! 🍿
 
 If something still isn't working after checking the
 [Common Errors](#-common-errors-and-solutions) section, re-read Steps 5–9
-carefully — the vast majority of issues come from either the virtual
+carefully - the vast majority of issues come from either the virtual
 environment not being activated or the `.env` file being missing/incorrect.
