@@ -37,7 +37,7 @@ will have the application running successfully.
 - A Windows, macOS, or Linux computer
 - [Visual Studio Code](https://code.visualstudio.com/) already installed
 - An internet connection (to install software and to call the OMDb API)
-- About 15–20 minutes
+- About 15-20 minutes
 
 You do **not** need any prior programming experience. Every command below can
 be typed directly into the VS Code terminal.
@@ -478,22 +478,22 @@ python main.py "asdkjfhaskjdfh"
 ```
 movie-search-cli/
 │
-├── main.py              # CLI entry point: argument parsing, interactive
-│                         # mode, and rendering results to the terminal
-├── movie_service.py      # OMDb API client: HTTP requests, response
-│                         # parsing, and custom error handling
-├── config.py             # Loads and validates environment variables
-│                         # (API key, base URL, timeout) from .env
-├── utils.py               # Shared Rich Console instance + formatting
-│                         # helpers (tables, panels, error/success messages)
-├── requirements.txt      # Exact list of Python packages this project needs
-├── .env.example           # Template showing which environment variables
-│                         # are required (safe to commit to Git)
-├── .env                   # Your real API key (created by you in Step 9,
-│                         # NEVER committed to Git - see .gitignore)
-├── .gitignore             # Tells Git which files/folders to ignore
-│                         # (venv/, .env, __pycache__/, etc.)
-└── README.md               # This file
+├── main.py # CLI entry point: argument parsing, interactive
+│ # mode, and rendering results to the terminal
+├── movie_service.py # OMDb API client: HTTP requests, response
+│ # parsing, and custom error handling
+├── config.py # Loads and validates environment variables
+│ # (API key, base URL, timeout) from .env
+├── utils.py # Shared Rich Console instance + formatting
+│ # helpers (tables, panels, error/success messages)
+├── requirements.txt # Exact list of Python packages this project needs
+├── .env.example # Template showing which environment variables
+│ # are required (safe to commit to Git)
+├── .env # Your real API key (created by you in Step 9,
+│ # NEVER committed to Git - see .gitignore)
+├── .gitignore # Tells Git which files/folders to ignore
+│ # (venv/, .env, __pycache__/, etc.)
+└── README.md # This file
 ```
 
 ---
@@ -663,6 +663,6 @@ favorite movies and enjoy the beautifully formatted results right in your
 terminal! 🍿
 
 If something still isn't working after checking the
-[Common Errors](#-common-errors-and-solutions) section, re-read Steps 5–9
+[Common Errors](#-common-errors-and-solutions) section, re-read Steps 5-9
 carefully - the vast majority of issues come from either the virtual
 environment not being activated or the `.env` file being missing/incorrect.
