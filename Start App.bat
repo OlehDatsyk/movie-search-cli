@@ -9,9 +9,9 @@ setlocal enabledelayedexpansion
 title Movie Search CLI - Launcher
 cd /d "%~dp0"
 
-echo =============================================================
-echo   Movie Search CLI - Windows Launcher
-echo =============================================================
+echo =================================================================
+echo   Movie Search CLI - Windows Launcher (Was made by Oleh Datsyk)
+echo =================================================================
 echo.
 
 REM -------------------------------------------------------------
